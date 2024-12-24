@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F51AC71B-7721-4825-AEBF-ACE73B374EC2}|Quiz 1.vcxproj|F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\CircleList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F51AC71B-7721-4825-AEBF-ACE73B374EC2}|Quiz 1.vcxproj|solutionrelative:CircleList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F51AC71B-7721-4825-AEBF-ACE73B374EC2}|Quiz 1.vcxproj|F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\Quiz 1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F51AC71B-7721-4825-AEBF-ACE73B374EC2}|Quiz 1.vcxproj|solutionrelative:Quiz 1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F51AC71B-7721-4825-AEBF-ACE73B374EC2}|Quiz 1.vcxproj|F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\CNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F51AC71B-7721-4825-AEBF-ACE73B374EC2}|Quiz 1.vcxproj|solutionrelative:CNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F51AC71B-7721-4825-AEBF-ACE73B374EC2}|Quiz 1.vcxproj|F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\CircleList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F51AC71B-7721-4825-AEBF-ACE73B374EC2}|Quiz 1.vcxproj|solutionrelative:CircleList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,12 +43,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CircleList.cpp",
+              "DocumentMoniker": "F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\CircleList.cpp",
+              "RelativeDocumentMoniker": "CircleList.cpp",
+              "ToolTip": "F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\CircleList.cpp",
+              "RelativeToolTip": "CircleList.cpp",
+              "ViewState": "AgIAAB0AAADAx8zMzEwtwDkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-24T06:25:30.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CNode.h",
+              "DocumentMoniker": "F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\CNode.h",
+              "RelativeDocumentMoniker": "CNode.h",
+              "ToolTip": "F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\CNode.h",
+              "RelativeToolTip": "CNode.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-24T06:24:56.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CircleList.h",
+              "DocumentMoniker": "F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\CircleList.h",
+              "RelativeDocumentMoniker": "CircleList.h",
+              "ToolTip": "F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\CircleList.h",
+              "RelativeToolTip": "CircleList.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-24T06:24:09.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Quiz 1.cpp",
               "DocumentMoniker": "F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\Quiz 1.cpp",
               "RelativeDocumentMoniker": "Quiz 1.cpp",
               "ToolTip": "F:\\Projects\\Data_Structure_Bnu_Systems_LImited\\Quiz 1\\Quiz 1.cpp",
               "RelativeToolTip": "Quiz 1.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAgzczMzIwnwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-24T06:20:38.269Z",
               "EditorCaption": ""

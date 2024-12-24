@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CircleList.cpp" />
+    <ClCompile Include="CNode.cpp" />
     <ClCompile Include="Quiz 1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CircleList.h" />
+    <ClInclude Include="CNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
