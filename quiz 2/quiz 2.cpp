@@ -43,12 +43,6 @@ int main() {
                 maxWait = waitTime;
             }
         }
-
-        //// Determine the number of new customers
-        //numArrivals = rand() % 4; // Randomly generate 0-3 customers
-        //for (int i = 0; i < numArrivals; i++) {
-        //    custQ.push(minute);
-        //}
         // Determine the number of new customers
         numArrivals = rand() % 4; // Randomly generate 0-3 customers
         if (numArrivals == 1 || numArrivals == 2) {
