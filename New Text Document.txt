@@ -1,0 +1,261 @@
+// Solution for Data Structures Exam
+#include <iostream>
+using namespace std;
+
+// Doubly Linked List Node Structure
+struct Node {
+    char data;
+    Node* next;
+    Node* prev;
+};
+
+// Function to create a new node for the doubly linked list
+Node* createNode(char data) {
+    Node* newNode = new Node();
+    newNode->data = data;
+    newNode->next = nullptr;
+    newNode->prev = nullptr;
+    return newNode;
+}
+
+// Function to insert at the end of a doubly linked list
+void insertEnd(Node*& head, char data) {
+    Node* newNode = createNode(data);
+    if (head == nullptr) {
+        head = newNode;
+        return;
+    }
+    Node* temp = head;
+    while (temp->next != nullptr) {
+        temp = temp->next;
+    }
+    temp->next = newNode;
+    newNode->prev = temp;
+}
+
+// Function to check if a doubly linked list is a palindrome
+bool isPalindrome(Node* head) {
+    if (head == nullptr) return true;
+    Node* left = head;
+    Node* right = head;
+    while (right->next != nullptr) {
+        right = right->next;
+    }
+    while (left != right && left->prev != right) {
+        if (left->data != right->data) return false;
+        left = left->next;
+        right = right->prev;
+    }
+    return true;
+}
+
+// Function to display a doubly linked list
+void displayList(Node* head) {
+    Node* temp = head;
+    while (temp != nullptr) {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+}
+
+// Function to reverse a singly linked list
+struct SNode {
+    int data;
+    SNode* next;
+};
+
+SNode* reverseList(SNode* head) {
+    SNode* prev = nullptr;
+    SNode* current = head;
+    SNode* next = nullptr;
+    while (current != nullptr) {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+    return prev;
+}
+
+// Circular linked list node structure
+struct CNode {
+    int data;
+    CNode* next;
+};
+
+// Function to find the maximum value in a circular linked list
+int findMax(CNode* head) {
+    if (head == nullptr) return -1;
+    int maxVal = head->data;
+    CNode* temp = head->next;
+    while (temp != head) {
+        if (temp->data > maxVal) maxVal = temp->data;
+        temp = temp->next;
+    }
+    return maxVal;
+}
+
+// Function to check for duplicate entries in a circular linked list
+bool hasDuplicates(CNode* head) {
+    if (head == nullptr) return false;
+    CNode* outer = head;
+    do {
+        CNode* inner = outer->next;
+        while (inner != head) {
+            if (outer->data == inner->data) return true;
+            inner = inner->next;
+        }
+        outer = outer->next;
+    } while (outer != head);
+    return false;
+}
+
+// Function to double values in a circular linked list
+void doubleValues(CNode* head) {
+    if (head == nullptr) return;
+    CNode* temp = head;
+    do {
+        temp->data *= 2;
+        temp = temp->next;
+    } while (temp != head);
+}
+
+// Function to search a word in a singly linked list
+bool wordSearch(SNode* head, const string& word) {
+    SNode* temp = head;
+    int i = 0;
+    while (temp != nullptr && i < word.size()) {
+        if (temp->data == word[i]) {
+            i++;
+        } else {
+            i = 0;
+        }
+        temp = temp->next;
+    }
+    return i == word.size();
+}
+
+// Function to reverse an array without using STL stack
+void reverseArray(int arr[], int n) {
+    for (int i = 0; i < n / 2; ++i) {
+        int temp = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i - 1] = temp;
+    }
+}
+
+// Parenthesis checker function without using STL stack
+bool isValidParenthesis(const string& str) {
+    int balance = 0;
+    for (char ch : str) {
+        if (ch == '(') {
+            balance++;
+        } else if (ch == ')') {
+            balance--;
+            if (balance < 0) return false;
+        }
+    }
+    return balance == 0;
+}
+
+// Function to print a singly linked list using recursion
+void printListRecursive(SNode* head) {
+    if (head == nullptr) return;
+    cout << head->data << " ";
+    printListRecursive(head->next);
+}
+
+// Circular queue implementation
+class CircularQueue {
+    int* arr;
+    int size;
+    int front;
+    int rear;
+
+public:
+    CircularQueue(int n) {
+        size = n;
+        arr = new int[n];
+        front = rear = -1;
+    }
+
+    bool isFull() {
+        return (rear + 1) % size == front;
+    }
+
+    bool isEmpty() {
+        return front == -1;
+    }
+
+    void enqueue(int value) {
+        if (isFull()) {
+            cout << "Queue is full\n";
+            return;
+        }
+        if (front == -1) {
+            front = rear = 0;
+        } else {
+            rear = (rear + 1) % size;
+        }
+        arr[rear] = value;
+    }
+
+    int dequeue() {
+        if (isEmpty()) {
+            cout << "Queue is empty\n";
+            return -1;
+        }
+        int data = arr[front];
+        if (front == rear) {
+            front = rear = -1;
+        } else {
+            front = (front + 1) % size;
+        }
+        return data;
+    }
+
+    void printQueue() {
+        if (isEmpty()) {
+            cout << "Queue is empty\n";
+            return;
+        }
+        int i = front;
+        while (true) {
+            cout << arr[i] << " ";
+            if (i == rear) break;
+            i = (i + 1) % size;
+        }
+        cout << endl;
+    }
+
+    void debugPrint() {
+        cout << "Front: " << front << ", Rear: " << rear << endl;
+        for (int i = 0; i < size; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+};
+
+// Main function
+int main() {
+    // Doubly linked list palindrome test cases
+    Node* head = nullptr;
+    insertEnd(head, 'e');
+    insertEnd(head, 'y');
+    insertEnd(head, 'e');
+    cout << "List: ";
+    displayList(head);
+    cout << "Is palindrome: " << (isPalindrome(head) ? "true" : "false") << endl;
+
+    head = nullptr;
+    insertEnd(head, 'a');
+    insertEnd(head, 'b');
+    insertEnd(head, 'c');
+    cout << "List: ";
+    displayList(head);
+    cout << "Is palindrome: " << (isPalindrome(head) ? "true" : "false") << endl;
+
+    return 0;
+}
