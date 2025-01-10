@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Projects\\Data_Structure\\Final Paper\\Hamza 2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{334CF6B2-C5F6-4DCE-96B7-A7FC061A800F}|Hamza 2.vcxproj|F:\\Projects\\Data_Structure\\Final Paper\\Hamza 2\\Hamza 2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{334CF6B2-C5F6-4DCE-96B7-A7FC061A800F}|Hamza 2.vcxproj|solutionrelative:Hamza 2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Hamza 2.cpp",
+              "DocumentMoniker": "F:\\Projects\\Data_Structure\\Final Paper\\Hamza 2\\Hamza 2.cpp",
+              "RelativeDocumentMoniker": "Hamza 2.cpp",
+              "ToolTip": "F:\\Projects\\Data_Structure\\Final Paper\\Hamza 2\\Hamza 2.cpp",
+              "RelativeToolTip": "Hamza 2.cpp",
+              "ViewState": "AgIAAEAAAAAA0MzMzMwRwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-10T07:02:29.329Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
